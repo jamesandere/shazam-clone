@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
     }
 
     return Scaffold(
-      backgroundColor: Color(0xFF240C3E),
+      backgroundColor: Color(0xFF001D34),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
                     height: 200.0,
                     width: 200.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFFF16CE),
+                      color: Color(0xFF089af8),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
