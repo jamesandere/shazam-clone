@@ -1,7 +1,9 @@
 import 'package:acr_cloud_sdk/acr_cloud_sdk.dart';
 import 'package:flutter/material.dart';
+// import 'package:provider/provider.dart';
 import 'package:shazam/models/deezer_song_model.dart';
 import 'package:shazam/services/song_service.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomeHelpers with ChangeNotifier{
   HomeHelpers(){
@@ -69,3 +71,7 @@ class HomeHelpers with ChangeNotifier{
     }
   }
 }
+
+final homeHelperModel = ChangeNotifierProvider<HomeHelpers>((ref){
+  return HomeHelpers();
+});
